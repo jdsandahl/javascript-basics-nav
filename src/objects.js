@@ -3,7 +3,10 @@ const createPerson = (name, age) => {
 };
 
 const getName = object => {
-  return object["name"];
+  return object.name;
+  /*
+  return  object["name"] //alternative  way 
+  */
 };
 
 const getProperty = (property, object) => {
@@ -50,7 +53,7 @@ const createTalkingPerson = (name, age) => {
   return {
     name: name,
     age: age,
-    introduce: function (otherPerson){
+    introduce: function(otherPerson) {
       return `Hi ${otherPerson}, my name is ${this.name} and I am ${this.age}!`;
     }
   };
